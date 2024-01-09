@@ -1,0 +1,101 @@
+/* quicksand-300 - vietnamese */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 300;
+    src: url('./fonts/quicksand-v31-vietnamese-300.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  
+  /* quicksand-regular - vietnamese */
+  @font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/quicksand-v31-vietnamese-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  
+  /* quicksand-500 - vietnamese */
+  @font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    src: url('./fonts/quicksand-v31-vietnamese-500.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  
+  /* quicksand-600 - vietnamese */
+  @font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 600;
+    src: url('./fonts/quicksand-v31-vietnamese-600.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  
+  /* quicksand-700 - vietnamese */
+  @font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./fonts/quicksand-v31-vietnamese-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+
+html {
+    background-color: #fbdcb0;
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    max-width: 720px;
+    margin: 0 auto;
+    position: relative;
+    height: 100vh;
+}
+
+.container .header, .container .footer {
+    background-color: #b61026;
+    color: rgb(255, 238, 196);
+    text-align: center;
+    padding: 8px 0px;
+    width: 100%;
+}
+
+.container .header {
+    position: absolute;
+    top: 0;
+}
+
+.container .footer {
+    position: absolute;
+    bottom: 0;
+}
+
+.container .content {
+    position: absolute;
+    top: 36px;
+    width: 100%;
+    overflow: auto;
+    height: calc(100vh - 36px);
+}
+
+.container .content div {
+    height: 100px;
+}
