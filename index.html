@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quà Tết Lộc Xuân Kinh Đô 2024 | Thới Lai, Cần Thơ</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="https://rawcdn.githack.com/nextapps-de/spotlight/0.7.8/dist/spotlight.bundle.js"></script>
 </head>
 
 <body>
@@ -16,8 +17,8 @@
                 <img src="./images/banner.png" />
             </div>
             <div class="products content-row">
-                <img src="./images/loc-vang.png" />
-                <img src="./images/loc-do.png" />
+                <img src="./images/loc-do.png" onclick="onClickRedEntryPoint()"/>
+                <img src="./images/loc-vang.png" onclick="onClickYellowEntryPoint()" />
             </div>
             <div class="promotion content-row">
                 <h2 class="title">Khuyến mãi</h2>
@@ -46,6 +47,26 @@
             Địa chỉ: ấp Thới Thuận A, thị trấn Thới Lai, huyện Thới Lai, Cần Thơ
         </div>
     </div>
+    <script>
+        var redGallery = [
+            { src: "./images/loc-do.png" },
+            { src: "./images/loc-do-slide1.png" },
+            { src: "./images/loc-do-slide2.png" },
+            { src: "./images/loc-do-slide3.png" },
+        ];
+        var onClickRedEntryPoint = () => {
+            Spotlight.show(redGallery);
+        }
+        var yellowGallery = [
+            { src: "./images/loc-vang.png" },
+            { src: "./images/loc-vang-slide1.png" },
+            { src: "./images/loc-vang-slide2.png" },
+            { src: "./images/loc-vang-slide3.png" },
+        ];
+        var onClickYellowEntryPoint = () => {
+            Spotlight.show(yellowGallery);
+        }
+    </script>
 </body>
 
 </html>

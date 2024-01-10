@@ -104,6 +104,10 @@ body {
   padding: 8px;
 }
 
+.container .content .products img:hover {
+  cursor: pointer;
+}
+
 .container .content .content-row {
   display: flex;
   align-items: center;
