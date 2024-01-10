@@ -76,29 +76,17 @@ body {
 
 .container .header,
 .container .footer {
-  background-color: #b61026;
-  color: rgb(255, 238, 196);
+  background-color: #941f15;
+  color: #ffeec4;
   text-align: center;
   padding: 8px 0px;
   width: 100%;
 }
 
-.container .header {
-  position: absolute;
-  top: 0;
-}
-
-.container .footer {
-  position: absolute;
-  bottom: 0;
-}
-
 .container .content {
-  position: absolute;
   top: 36px;
   width: 100%;
   overflow: auto;
-  height: calc(100vh - 72px);
   background-image: url("./images/red-bg.jpg");
   background-size: cover;
   background-origin: content-box;
