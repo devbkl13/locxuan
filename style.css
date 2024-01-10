@@ -159,7 +159,7 @@ body {
 
 .container .content .content-row .detail-content .example {
   font-style: italic;
-  width: 360px;
+  max-width: 360px;
 }
 
 
