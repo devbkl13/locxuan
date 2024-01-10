@@ -65,13 +65,12 @@ html {
 body {
   margin: 0;
   color: rgb(255, 238, 196);
-  ;
 }
 
 .container {
+  position: relative;
   max-width: 720px;
   margin: 0 auto;
-  position: relative;
   height: 100vh;
 }
 
@@ -108,25 +107,48 @@ body {
   background-attachment: scroll;
 }
 
-.container .content .content-row {
-  display: flex;
-  align-items: center;
-}
-
 .container .content .introduction img {
   width: 100%;
 }
 
 .container .content .products img {
   width: 50%;
-  display: inline;
+  padding: 8px;
+}
+
+.container .content .content-row {
+  display: flex;
+  align-items: center;
 }
 
 .container .content .content-row .title,
 .container .content .content-row .detail-content {
-  padding: 16px;
+  padding: 8px 16px;
 }
 
 .container .content .content-row .title {
-  min-width: 200px;
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+
+.container .content .content-row .detail-content {
+  margin: 0;
+}
+
+.container .content .content-row .detail-content div {
+  margin: 8px 0;
+}
+
+.container .content .content-row .detail-content div:first-child {
+  margin-top: 0;
+}
+
+.container .content .content-row .detail-content div:last-child {
+  margin-bottom: 0;
+}
+
+.container .content .content-row.promotion,
+.container .content .content-row.shipping,
+.container .content .content-row.collaborators {
+  flex-direction: column;
 }
