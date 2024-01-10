@@ -190,3 +190,7 @@ a.link-text {
 #hide:target ~ #promotion-example {
     display: inherit; 
 }
+
+.content-row .histats-counter {
+  margin: 0 auto;
+}
