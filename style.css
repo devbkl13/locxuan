@@ -208,15 +208,20 @@ body {
   margin-bottom: 0;
 }
 
-.container .content .content-row .detail-content ul {
-  margin: 0;
-}
-
 .container .content .content-row .detail-content .example {
   font-style: italic;
   max-width: 360px;
 }
 
+.container .content .content-row .detail-content .indent {
+  margin-left: 16px;
+}
+
+.container .content .content-row .detail-content b.price {
+  background: #6c6c6c;
+  border-radius: 8px;
+  padding: 0 4px;
+}
 
 .container .content .content-row.promotion,
 .container .content .content-row.shipping,
