@@ -55,11 +55,11 @@
 
 * {
   box-sizing: border-box;
+  font-family: 'Quicksand', Arial, Helvetica, sans-serif;
 }
 
 html {
   background-color: #fbdcb0;
-  font-family: 'Quicksand', Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -99,15 +99,70 @@ body {
   width: 100%;
 }
 
-.container .content .products img {
+.container .content .products .product {
   width: 50%;
   padding: 8px;
+}
+
+.container .content .products .product img {
+  width: 100%;
+}
+
+.product-btn {
+  display: block;
+  background-color: #ffda2d;
+  color: #af0017;
+  margin: 8px auto;
+  border-radius: 24px;
+  border: 4px solid #FEDB45;
+  padding: 4px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  overflow: hidden;
   animation: 0.3s jump ease infinite alternate;
+}
+
+.product-btn:hover {
+  cursor: pointer;
+  background-color: #ffde4c;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 4px 4px;
+  animation: none;
+}
+
+@media (max-width: 460px) {
+  .product-btn {
+    padding: 2px 8px;
+  }
+}
+
+.product-btn:before {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  top: -180px;
+  left: 0;
+  width: 30px;
+  height: 100%;
+  background-color: #fff;
+  animation: shiny-btn 1.5s ease-in-out infinite;
+}
+
+.product-btn:hover:before {
+  animation: none;
+  display: none;
+}
+
+@keyframes shiny-btn {
+  0% { -webkit-transform: scale(0) rotate(45deg); opacity: 0; }
+  80% { -webkit-transform: scale(0) rotate(45deg); opacity: 0.5; }
+  81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }
+  100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
 }
 
 @keyframes jump {
   0% {
-      transform: scale(0.993);
+      transform: scale(0.97);
   }
   100% {
       transform: scale(1);
