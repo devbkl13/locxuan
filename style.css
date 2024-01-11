@@ -84,7 +84,6 @@ body {
 }
 
 .container .content {
-  top: 36px;
   width: 100%;
   overflow: auto;
   background-image: url("./images/red-bg.jpg");
@@ -152,6 +151,7 @@ body {
 .container .content .content-row {
   display: flex;
   align-items: center;
+  margin-bottom: 16px;
 }
 
 .container .content .content-row:last-child {
@@ -354,4 +354,17 @@ a.contact-sticky-btn.facebook:hover i {
   a.contact-sticky-btn {
     transform: scale(0.9);
   }
+}
+
+.divider {
+  text-align: center;
+}
+
+.divider::after {
+  content: "";
+  background: #ffeec4;
+  height: 1px;
+  width: 200px;
+  display: block;
+  margin-top: 8px;
 }
