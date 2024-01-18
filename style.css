@@ -191,19 +191,26 @@ body {
 }
 
 .container .content .content-row .detail-content .indent {
-  margin-left: 16px;
+  margin-left: 32px;
 }
 
 .container .content .content-row .detail-content b.price {
-  background: #6c6c6c;
+  background: #ffda2d;
+  color: #af0017;
   border-radius: 8px;
   padding: 0 4px;
+  font-size: 18px;
+}
+
+.container .content .content-row .detail-content .quantity {
+  text-decoration: underline;
 }
 
 .container .content .content-row.promotion,
 .container .content .content-row.purchase,
 .container .content .content-row.shipping,
-.container .content .content-row.collaborators {
+.container .content .content-row.collaborators,
+.container .content .content-row.counter {
   flex-direction: column;
 }
 
